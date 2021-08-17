@@ -9,19 +9,15 @@ import java.sql.Timestamp;
  * @Create 2021-08-16 11:10:17
  * @Version 1.0
  */
-public class Role {
-	// 自增id
+public class Tb_natmeha_hots_coll_ref {
+	// itemID ：
 	private Long itemID;
 	// 唯一标识UUID
 	private String itemCode;
-	// 角色名称
-	private String ROLE_NAME;
-	// 角色说明
-	private String ROLE_DESCRIPTION;
-	// 应用id
-	private String APP_CODE;
-	// 类型（0：普通，1：管理员）
-	private Integer ROLE_TYPE;
+	// 热点code（中药常识code）
+	private String HOTSPOT_CODE;
+	// 用户code
+	private String USER_CODE;
 	// CREATER ：
 	private String CREATER;
 	// itemCreateAt ：
@@ -32,29 +28,27 @@ public class Role {
 	private Timestamp itemUpdateAt;
 
 	// 无参构造器
-	public Role() {
+	public Tb_natmeha_hots_coll_ref() {
 	}
 
 	// 有参构造器，进行属性值的初始化
-	public Role(Long itemID, String itemCode, String ROLE_NAME, String ROLE_DESCRIPTION, String APP_CODE, Integer ROLE_TYPE, String CREATER, Timestamp itemCreateAt, String UPDATER, Timestamp itemUpdateAt) {
+	public Tb_natmeha_hots_coll_ref(Long itemID, String itemCode, String HOTSPOT_CODE, String USER_CODE, String CREATER, Timestamp itemCreateAt, String UPDATER, Timestamp itemUpdateAt) {
 		this.itemID = itemID;
 		this.itemCode = itemCode;
-		this.ROLE_NAME = ROLE_NAME;
-		this.ROLE_DESCRIPTION = ROLE_DESCRIPTION;
-		this.APP_CODE = APP_CODE;
-		this.ROLE_TYPE = ROLE_TYPE;
+		this.HOTSPOT_CODE = HOTSPOT_CODE;
+		this.USER_CODE = USER_CODE;
 		this.CREATER = CREATER;
 		this.itemCreateAt = itemCreateAt;
 		this.UPDATER = UPDATER;
 		this.itemUpdateAt = itemUpdateAt;
 	}
 
-	// 获取 自增id 的属性值
+	// 获取 itemID 的属性值
 	public Long getItemID() {
 		return itemID;
 	}
 
-	// 设置 自增id 的属性值
+	// 设置 itemID 的属性值
 	public void setItemID(Long itemID) {
 		this.itemID = itemID;
 	}
@@ -69,44 +63,24 @@ public class Role {
 		this.itemCode = itemCode;
 	}
 
-	// 获取 角色名称 的属性值
-	public String getROLE_NAME() {
-		return ROLE_NAME;
+	// 获取 热点code（中药常识code） 的属性值
+	public String getHOTSPOT_CODE() {
+		return HOTSPOT_CODE;
 	}
 
-	// 设置 角色名称 的属性值
-	public void setROLE_NAME(String ROLE_NAME) {
-		this.ROLE_NAME = ROLE_NAME;
+	// 设置 热点code（中药常识code） 的属性值
+	public void setHOTSPOT_CODE(String HOTSPOT_CODE) {
+		this.HOTSPOT_CODE = HOTSPOT_CODE;
 	}
 
-	// 获取 角色说明 的属性值
-	public String getROLE_DESCRIPTION() {
-		return ROLE_DESCRIPTION;
+	// 获取 用户code 的属性值
+	public String getUSER_CODE() {
+		return USER_CODE;
 	}
 
-	// 设置 角色说明 的属性值
-	public void setROLE_DESCRIPTION(String ROLE_DESCRIPTION) {
-		this.ROLE_DESCRIPTION = ROLE_DESCRIPTION;
-	}
-
-	// 获取 应用id 的属性值
-	public String getAPP_CODE() {
-		return APP_CODE;
-	}
-
-	// 设置 应用id 的属性值
-	public void setAPP_CODE(String APP_CODE) {
-		this.APP_CODE = APP_CODE;
-	}
-
-	// 获取 类型（0：普通，1：管理员） 的属性值
-	public Integer getROLE_TYPE() {
-		return ROLE_TYPE;
-	}
-
-	// 设置 类型（0：普通，1：管理员） 的属性值
-	public void setROLE_TYPE(Integer ROLE_TYPE) {
-		this.ROLE_TYPE = ROLE_TYPE;
+	// 设置 用户code 的属性值
+	public void setUSER_CODE(String USER_CODE) {
+		this.USER_CODE = USER_CODE;
 	}
 
 	// 获取 CREATER 的属性值
@@ -152,13 +126,11 @@ public class Role {
 	// 重写toString方法，使用该方法可以在控制台打印属性的数据
 	@Override
 	public String toString(){
-		return "Role {" + 
+		return "Tb_natmeha_hots_coll_ref {" + 
 				", itemID='" + itemID + '\'' + 
 				", itemCode='" + itemCode + '\'' + 
-				", ROLE_NAME='" + ROLE_NAME + '\'' + 
-				", ROLE_DESCRIPTION='" + ROLE_DESCRIPTION + '\'' + 
-				", APP_CODE='" + APP_CODE + '\'' + 
-				", ROLE_TYPE='" + ROLE_TYPE + '\'' + 
+				", HOTSPOT_CODE='" + HOTSPOT_CODE + '\'' + 
+				", USER_CODE='" + USER_CODE + '\'' + 
 				", CREATER='" + CREATER + '\'' + 
 				", itemCreateAt='" + itemCreateAt + '\'' + 
 				", UPDATER='" + UPDATER + '\'' + 

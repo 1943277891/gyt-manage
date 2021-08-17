@@ -9,52 +9,52 @@ import java.sql.Timestamp;
  * @Create 2021-08-16 11:10:17
  * @Version 1.0
  */
-public class Role {
-	// 自增id
+public class User_role_ref {
+	// itemID ：
 	private Long itemID;
 	// 唯一标识UUID
 	private String itemCode;
-	// 角色名称
-	private String ROLE_NAME;
-	// 角色说明
-	private String ROLE_DESCRIPTION;
-	// 应用id
+	// 关联user表itemCode字段
+	private String USER_CODE;
+	// 应用系统code
 	private String APP_CODE;
-	// 类型（0：普通，1：管理员）
-	private Integer ROLE_TYPE;
-	// CREATER ：
+	// 关联role表itemCode字段（应用系统角色）
+	private String ROLE_CODE;
+	// 平台角色
+	private String PLAT_ROLE;
+	// 创建人
 	private String CREATER;
-	// itemCreateAt ：
+	// 创建时间
 	private Timestamp itemCreateAt;
-	// UPDATER ：
+	// 修改人
 	private String UPDATER;
-	// itemUpdateAt ：
+	// 修改时间
 	private Timestamp itemUpdateAt;
 
 	// 无参构造器
-	public Role() {
+	public User_role_ref() {
 	}
 
 	// 有参构造器，进行属性值的初始化
-	public Role(Long itemID, String itemCode, String ROLE_NAME, String ROLE_DESCRIPTION, String APP_CODE, Integer ROLE_TYPE, String CREATER, Timestamp itemCreateAt, String UPDATER, Timestamp itemUpdateAt) {
+	public User_role_ref(Long itemID, String itemCode, String USER_CODE, String APP_CODE, String ROLE_CODE, String PLAT_ROLE, String CREATER, Timestamp itemCreateAt, String UPDATER, Timestamp itemUpdateAt) {
 		this.itemID = itemID;
 		this.itemCode = itemCode;
-		this.ROLE_NAME = ROLE_NAME;
-		this.ROLE_DESCRIPTION = ROLE_DESCRIPTION;
+		this.USER_CODE = USER_CODE;
 		this.APP_CODE = APP_CODE;
-		this.ROLE_TYPE = ROLE_TYPE;
+		this.ROLE_CODE = ROLE_CODE;
+		this.PLAT_ROLE = PLAT_ROLE;
 		this.CREATER = CREATER;
 		this.itemCreateAt = itemCreateAt;
 		this.UPDATER = UPDATER;
 		this.itemUpdateAt = itemUpdateAt;
 	}
 
-	// 获取 自增id 的属性值
+	// 获取 itemID 的属性值
 	public Long getItemID() {
 		return itemID;
 	}
 
-	// 设置 自增id 的属性值
+	// 设置 itemID 的属性值
 	public void setItemID(Long itemID) {
 		this.itemID = itemID;
 	}
@@ -69,82 +69,82 @@ public class Role {
 		this.itemCode = itemCode;
 	}
 
-	// 获取 角色名称 的属性值
-	public String getROLE_NAME() {
-		return ROLE_NAME;
+	// 获取 关联user表itemCode字段 的属性值
+	public String getUSER_CODE() {
+		return USER_CODE;
 	}
 
-	// 设置 角色名称 的属性值
-	public void setROLE_NAME(String ROLE_NAME) {
-		this.ROLE_NAME = ROLE_NAME;
+	// 设置 关联user表itemCode字段 的属性值
+	public void setUSER_CODE(String USER_CODE) {
+		this.USER_CODE = USER_CODE;
 	}
 
-	// 获取 角色说明 的属性值
-	public String getROLE_DESCRIPTION() {
-		return ROLE_DESCRIPTION;
-	}
-
-	// 设置 角色说明 的属性值
-	public void setROLE_DESCRIPTION(String ROLE_DESCRIPTION) {
-		this.ROLE_DESCRIPTION = ROLE_DESCRIPTION;
-	}
-
-	// 获取 应用id 的属性值
+	// 获取 应用系统code 的属性值
 	public String getAPP_CODE() {
 		return APP_CODE;
 	}
 
-	// 设置 应用id 的属性值
+	// 设置 应用系统code 的属性值
 	public void setAPP_CODE(String APP_CODE) {
 		this.APP_CODE = APP_CODE;
 	}
 
-	// 获取 类型（0：普通，1：管理员） 的属性值
-	public Integer getROLE_TYPE() {
-		return ROLE_TYPE;
+	// 获取 关联role表itemCode字段（应用系统角色） 的属性值
+	public String getROLE_CODE() {
+		return ROLE_CODE;
 	}
 
-	// 设置 类型（0：普通，1：管理员） 的属性值
-	public void setROLE_TYPE(Integer ROLE_TYPE) {
-		this.ROLE_TYPE = ROLE_TYPE;
+	// 设置 关联role表itemCode字段（应用系统角色） 的属性值
+	public void setROLE_CODE(String ROLE_CODE) {
+		this.ROLE_CODE = ROLE_CODE;
 	}
 
-	// 获取 CREATER 的属性值
+	// 获取 平台角色 的属性值
+	public String getPLAT_ROLE() {
+		return PLAT_ROLE;
+	}
+
+	// 设置 平台角色 的属性值
+	public void setPLAT_ROLE(String PLAT_ROLE) {
+		this.PLAT_ROLE = PLAT_ROLE;
+	}
+
+	// 获取 创建人 的属性值
 	public String getCREATER() {
 		return CREATER;
 	}
 
-	// 设置 CREATER 的属性值
+	// 设置 创建人 的属性值
 	public void setCREATER(String CREATER) {
 		this.CREATER = CREATER;
 	}
 
-	// 获取 itemCreateAt 的属性值
+	// 获取 创建时间 的属性值
 	public Timestamp getItemCreateAt() {
 		return itemCreateAt;
 	}
 
-	// 设置 itemCreateAt 的属性值
+	// 设置 创建时间 的属性值
 	public void setItemCreateAt(Timestamp itemCreateAt) {
 		this.itemCreateAt = itemCreateAt;
 	}
 
-	// 获取 UPDATER 的属性值
+	// 获取 修改人 的属性值
 	public String getUPDATER() {
 		return UPDATER;
 	}
 
-	// 设置 UPDATER 的属性值
+	// 设置 修改人 的属性值
 	public void setUPDATER(String UPDATER) {
 		this.UPDATER = UPDATER;
 	}
 
-	// 获取 itemUpdateAt 的属性值
+	// 获取 修改时间 的属性值
 	public Timestamp getItemUpdateAt() {
 		return itemUpdateAt;
 	}
 
-	// 设置 itemUpdateAt 的属性值
+	// 设置 修改时间 的属性值
 	public void setItemUpdateAt(Timestamp itemUpdateAt) {
 		this.itemUpdateAt = itemUpdateAt;
 	}
@@ -152,13 +152,13 @@ public class Role {
 	// 重写toString方法，使用该方法可以在控制台打印属性的数据
 	@Override
 	public String toString(){
-		return "Role {" + 
+		return "User_role_ref {" + 
 				", itemID='" + itemID + '\'' + 
 				", itemCode='" + itemCode + '\'' + 
-				", ROLE_NAME='" + ROLE_NAME + '\'' + 
-				", ROLE_DESCRIPTION='" + ROLE_DESCRIPTION + '\'' + 
+				", USER_CODE='" + USER_CODE + '\'' + 
 				", APP_CODE='" + APP_CODE + '\'' + 
-				", ROLE_TYPE='" + ROLE_TYPE + '\'' + 
+				", ROLE_CODE='" + ROLE_CODE + '\'' + 
+				", PLAT_ROLE='" + PLAT_ROLE + '\'' + 
 				", CREATER='" + CREATER + '\'' + 
 				", itemCreateAt='" + itemCreateAt + '\'' + 
 				", UPDATER='" + UPDATER + '\'' + 

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>添加数据</title>
+</head>
+<body>
+<form th:action="@{update}" method="post">
+    <input name="DEPT_CODE" type="text" th:value="${tnd.DEPT_CODE}">
+    <input name="DOCTOR_TITLE" type="text" th:value="${tnd.DOCTOR_TITLE}">
+    <input name="DOCTOR_NAME" type="text" th:value="${tnd.DOCTOR_NAME}">
+    <input th:type="submit" value="提交">
+</form>
+</body>
+</html>

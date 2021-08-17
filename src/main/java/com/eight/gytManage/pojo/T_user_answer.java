@@ -6,24 +6,24 @@ import java.sql.Timestamp;
 
 /**
  * @Author Kele-Bing
- * @Create 2021-08-13 12:33:31
+ * @Create 2021-08-16 11:10:17
  * @Version 1.0
  */
-public class TUseranswer {
-	// itemid ：
-	private Long itemid;
-	// itemcode ：
-	private String itemcode;
+public class T_user_answer {
+	// itemID ：
+	private Long itemID;
+	// itemCode ：
+	private String itemCode;
 	// 患者id
-	private String userId;
+	private String user_id;
 	// 题目id
-	private String qId;
+	private String q_id;
 	// 患者答题选项
-	private String qOption;
+	private String q_option;
 	// 答题时间
-	private Timestamp tcmRemark;
+	private Timestamp tcm_remark;
 	// 体质类型id
-	private String typeId;
+	private String type_id;
 	// 患者本次答题题目序号
 	private String seq;
 	// 是否生效（1：是  0：否）
@@ -34,101 +34,101 @@ public class TUseranswer {
 	private String flag2;
 	// 预留字段，暂未使用
 	private String flag3;
-	// uptflag ：
-	private String uptflag;
+	// uptFlag ：
+	private String uptFlag;
 	// 体质测评结果itemcode
-	private String resultItemcode;
+	private String result_itemcode;
 
 	// 无参构造器
-	public TUseranswer() {
+	public T_user_answer() {
 	}
 
 	// 有参构造器，进行属性值的初始化
-	public TUseranswer(Long itemid, String itemcode, String userId, String qId, String qOption, Timestamp tcmRemark, String typeId, String seq, String useflag, String flag1, String flag2, String flag3, String uptflag, String resultItemcode) {
-		this.itemid = itemid;
-		this.itemcode = itemcode;
-		this.userId = userId;
-		this.qId = qId;
-		this.qOption = qOption;
-		this.tcmRemark = tcmRemark;
-		this.typeId = typeId;
+	public T_user_answer(Long itemID, String itemCode, String user_id, String q_id, String q_option, Timestamp tcm_remark, String type_id, String seq, String useflag, String flag1, String flag2, String flag3, String uptFlag, String result_itemcode) {
+		this.itemID = itemID;
+		this.itemCode = itemCode;
+		this.user_id = user_id;
+		this.q_id = q_id;
+		this.q_option = q_option;
+		this.tcm_remark = tcm_remark;
+		this.type_id = type_id;
 		this.seq = seq;
 		this.useflag = useflag;
 		this.flag1 = flag1;
 		this.flag2 = flag2;
 		this.flag3 = flag3;
-		this.uptflag = uptflag;
-		this.resultItemcode = resultItemcode;
+		this.uptFlag = uptFlag;
+		this.result_itemcode = result_itemcode;
 	}
 
-	// 获取 itemid 的属性值
-	public Long getItemid() {
-		return itemid;
+	// 获取 itemID 的属性值
+	public Long getItemID() {
+		return itemID;
 	}
 
-	// 设置 itemid 的属性值
-	public void setItemid(Long itemid) {
-		this.itemid = itemid;
+	// 设置 itemID 的属性值
+	public void setItemID(Long itemID) {
+		this.itemID = itemID;
 	}
 
-	// 获取 itemcode 的属性值
-	public String getItemcode() {
-		return itemcode;
+	// 获取 itemCode 的属性值
+	public String getItemCode() {
+		return itemCode;
 	}
 
-	// 设置 itemcode 的属性值
-	public void setItemcode(String itemcode) {
-		this.itemcode = itemcode;
+	// 设置 itemCode 的属性值
+	public void setItemCode(String itemCode) {
+		this.itemCode = itemCode;
 	}
 
 	// 获取 患者id 的属性值
-	public String getUserId() {
-		return userId;
+	public String getUser_id() {
+		return user_id;
 	}
 
 	// 设置 患者id 的属性值
-	public void setUserId(String userId) {
-		this.userId = userId;
+	public void setUser_id(String user_id) {
+		this.user_id = user_id;
 	}
 
 	// 获取 题目id 的属性值
-	public String getqId() {
-		return qId;
+	public String getq_id() {
+		return q_id;
 	}
 
 	// 设置 题目id 的属性值
-	public void setqId(String qId) {
-		this.qId = qId;
+	public void setq_id(String q_id) {
+		this.q_id = q_id;
 	}
 
 	// 获取 患者答题选项 的属性值
-	public String getqOption() {
-		return qOption;
+	public String getq_option() {
+		return q_option;
 	}
 
 	// 设置 患者答题选项 的属性值
-	public void setqOption(String qOption) {
-		this.qOption = qOption;
+	public void setq_option(String q_option) {
+		this.q_option = q_option;
 	}
 
 	// 获取 答题时间 的属性值
-	public Timestamp getTcmRemark() {
-		return tcmRemark;
+	public Timestamp getTcm_remark() {
+		return tcm_remark;
 	}
 
 	// 设置 答题时间 的属性值
-	public void setTcmRemark(Timestamp tcmRemark) {
-		this.tcmRemark = tcmRemark;
+	public void setTcm_remark(Timestamp tcm_remark) {
+		this.tcm_remark = tcm_remark;
 	}
 
 	// 获取 体质类型id 的属性值
-	public String getTypeId() {
-		return typeId;
+	public String getType_id() {
+		return type_id;
 	}
 
 	// 设置 体质类型id 的属性值
-	public void setTypeId(String typeId) {
-		this.typeId = typeId;
+	public void setType_id(String type_id) {
+		this.type_id = type_id;
 	}
 
 	// 获取 患者本次答题题目序号 的属性值
@@ -181,44 +181,44 @@ public class TUseranswer {
 		this.flag3 = flag3;
 	}
 
-	// 获取 uptflag 的属性值
-	public String getUptflag() {
-		return uptflag;
+	// 获取 uptFlag 的属性值
+	public String getUptFlag() {
+		return uptFlag;
 	}
 
-	// 设置 uptflag 的属性值
-	public void setUptflag(String uptflag) {
-		this.uptflag = uptflag;
+	// 设置 uptFlag 的属性值
+	public void setUptFlag(String uptFlag) {
+		this.uptFlag = uptFlag;
 	}
 
 	// 获取 体质测评结果itemcode 的属性值
-	public String getResultItemcode() {
-		return resultItemcode;
+	public String getResult_itemcode() {
+		return result_itemcode;
 	}
 
 	// 设置 体质测评结果itemcode 的属性值
-	public void setResultItemcode(String resultItemcode) {
-		this.resultItemcode = resultItemcode;
+	public void setResult_itemcode(String result_itemcode) {
+		this.result_itemcode = result_itemcode;
 	}
 
 	// 重写toString方法，使用该方法可以在控制台打印属性的数据
 	@Override
 	public String toString(){
-		return "TUseranswer {" + 
-				", itemid='" + itemid + '\'' + 
-				", itemcode='" + itemcode + '\'' + 
-				", userId='" + userId + '\'' + 
-				", qId='" + qId + '\'' + 
-				", qOption='" + qOption + '\'' + 
-				", tcmRemark='" + tcmRemark + '\'' + 
-				", typeId='" + typeId + '\'' + 
+		return "T_user_answer {" + 
+				", itemID='" + itemID + '\'' + 
+				", itemCode='" + itemCode + '\'' + 
+				", user_id='" + user_id + '\'' + 
+				", q_id='" + q_id + '\'' + 
+				", q_option='" + q_option + '\'' + 
+				", tcm_remark='" + tcm_remark + '\'' + 
+				", type_id='" + type_id + '\'' + 
 				", seq='" + seq + '\'' + 
 				", useflag='" + useflag + '\'' + 
 				", flag1='" + flag1 + '\'' + 
 				", flag2='" + flag2 + '\'' + 
 				", flag3='" + flag3 + '\'' + 
-				", uptflag='" + uptflag + '\'' + 
-				", resultItemcode='" + resultItemcode + '\'' + 
+				", uptFlag='" + uptFlag + '\'' + 
+				", result_itemcode='" + result_itemcode + '\'' + 
 				"}";
 	}
 }

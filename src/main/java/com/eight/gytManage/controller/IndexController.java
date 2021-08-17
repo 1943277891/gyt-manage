@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @Version 1.0
  */
 @Controller
-@RequestMapping("/")
+@RequestMapping("/eight")
 public class IndexController {
     
     @RequestMapping("/")

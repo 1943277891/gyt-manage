@@ -1,336 +1,337 @@
 package com.eight.gytManage.pojo;
 
+
 import java.sql.Timestamp;
 import java.sql.Date;
 
 
 /**
  * @Author Kele-Bing
- * @Create 2021-08-13 12:33:31
+ * @Create 2021-08-16 11:10:17
  * @Version 1.0
  */
 public class User {
-	// itemid ：
-	private Long itemid;
+	// itemID ：
+	private Long itemID;
 	// 唯一标识UUID
-	private String itemcode;
+	private String itemCode;
 	// 机构id(关联organization表中的itemID）
-	private String orgCode;
+	private String ORG_CODE;
 	// 登陆账号
-	private String username;
+	private String USERNAME;
 	// 密码
-	private String password;
+	private String PASSWORD;
 	// 盐
-	private String salt;
+	private String SALT;
 	// 用户名
-	private String name;
+	private String NAME;
 	// 性别
-	private String gender;
+	private String GENDER;
 	// 肖像
-	private byte[] portrait;
+	private byte PORTRAIT;
 	// 身份证件类型
-	private String idcardType;
+	private String IDCARD_TYPE;
 	// 证件号码
-	private String idcardNo;
+	private String IDCARD_NO;
 	// email
-	private String email;
-	// state ：
-	private String state;
+	private String EMAIL;
+	// STATE ：
+	private String STATE;
 	// 电话号码
-	private String mobilephone;
+	private String mobilePhone;
 	// 创建人
-	private String creater;
+	private String CREATER;
 	// 创建时间
-	private Timestamp itemcreateat;
+	private Timestamp itemCreateAt;
 	// 修改人
-	private String updater;
+	private String UPDATER;
 	// 修改时间
-	private Timestamp itemupdateat;
+	private Timestamp itemUpdateAt;
 	// 地级机构id
-	private String cityid;
+	private String CITYID;
 	// 类型（0：普通，1：管理员）
-	private Integer type;
+	private Integer TYPE;
 	// 出生日期
-	private Date birth;
-	// wxOpenid ：
-	private String wxOpenid;
+	private Date BIRTH;
+	// WX_OPENID ：
+	private String WX_OPENID;
 
 	// 无参构造器
 	public User() {
 	}
 
 	// 有参构造器，进行属性值的初始化
-	public User(Long itemid, String itemcode, String orgCode, String username, String password, String salt, String name, String gender, byte[] portrait, String idcardType, String idcardNo, String email, String state, String mobilephone, String creater, Timestamp itemcreateat, String updater, Timestamp itemupdateat, String cityid, Integer type, Date birth, String wxOpenid) {
-		this.itemid = itemid;
-		this.itemcode = itemcode;
-		this.orgCode = orgCode;
-		this.username = username;
-		this.password = password;
-		this.salt = salt;
-		this.name = name;
-		this.gender = gender;
-		this.portrait = portrait;
-		this.idcardType = idcardType;
-		this.idcardNo = idcardNo;
-		this.email = email;
-		this.state = state;
-		this.mobilephone = mobilephone;
-		this.creater = creater;
-		this.itemcreateat = itemcreateat;
-		this.updater = updater;
-		this.itemupdateat = itemupdateat;
-		this.cityid = cityid;
-		this.type = type;
-		this.birth = birth;
-		this.wxOpenid = wxOpenid;
+	public User(Long itemID, String itemCode, String ORG_CODE, String USERNAME, String PASSWORD, String SALT, String NAME, String GENDER, byte PORTRAIT, String IDCARD_TYPE, String IDCARD_NO, String EMAIL, String STATE, String mobilePhone, String CREATER, Timestamp itemCreateAt, String UPDATER, Timestamp itemUpdateAt, String CITYID, Integer TYPE, Date BIRTH, String WX_OPENID) {
+		this.itemID = itemID;
+		this.itemCode = itemCode;
+		this.ORG_CODE = ORG_CODE;
+		this.USERNAME = USERNAME;
+		this.PASSWORD = PASSWORD;
+		this.SALT = SALT;
+		this.NAME = NAME;
+		this.GENDER = GENDER;
+		this.PORTRAIT = PORTRAIT;
+		this.IDCARD_TYPE = IDCARD_TYPE;
+		this.IDCARD_NO = IDCARD_NO;
+		this.EMAIL = EMAIL;
+		this.STATE = STATE;
+		this.mobilePhone = mobilePhone;
+		this.CREATER = CREATER;
+		this.itemCreateAt = itemCreateAt;
+		this.UPDATER = UPDATER;
+		this.itemUpdateAt = itemUpdateAt;
+		this.CITYID = CITYID;
+		this.TYPE = TYPE;
+		this.BIRTH = BIRTH;
+		this.WX_OPENID = WX_OPENID;
 	}
 
-	// 获取 itemid 的属性值
-	public Long getItemid() {
-		return itemid;
+	// 获取 itemID 的属性值
+	public Long getItemID() {
+		return itemID;
 	}
 
-	// 设置 itemid 的属性值
-	public void setItemid(Long itemid) {
-		this.itemid = itemid;
+	// 设置 itemID 的属性值
+	public void setItemID(Long itemID) {
+		this.itemID = itemID;
 	}
 
 	// 获取 唯一标识UUID 的属性值
-	public String getItemcode() {
-		return itemcode;
+	public String getItemCode() {
+		return itemCode;
 	}
 
 	// 设置 唯一标识UUID 的属性值
-	public void setItemcode(String itemcode) {
-		this.itemcode = itemcode;
+	public void setItemCode(String itemCode) {
+		this.itemCode = itemCode;
 	}
 
 	// 获取 机构id(关联organization表中的itemID） 的属性值
-	public String getOrgCode() {
-		return orgCode;
+	public String getORG_CODE() {
+		return ORG_CODE;
 	}
 
 	// 设置 机构id(关联organization表中的itemID） 的属性值
-	public void setOrgCode(String orgCode) {
-		this.orgCode = orgCode;
+	public void setORG_CODE(String ORG_CODE) {
+		this.ORG_CODE = ORG_CODE;
 	}
 
 	// 获取 登陆账号 的属性值
-	public String getUsername() {
-		return username;
+	public String getUSERNAME() {
+		return USERNAME;
 	}
 
 	// 设置 登陆账号 的属性值
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUSERNAME(String USERNAME) {
+		this.USERNAME = USERNAME;
 	}
 
 	// 获取 密码 的属性值
-	public String getPassword() {
-		return password;
+	public String getPASSWORD() {
+		return PASSWORD;
 	}
 
 	// 设置 密码 的属性值
-	public void setPassword(String password) {
-		this.password = password;
+	public void setPASSWORD(String PASSWORD) {
+		this.PASSWORD = PASSWORD;
 	}
 
 	// 获取 盐 的属性值
-	public String getSalt() {
-		return salt;
+	public String getSALT() {
+		return SALT;
 	}
 
 	// 设置 盐 的属性值
-	public void setSalt(String salt) {
-		this.salt = salt;
+	public void setSALT(String SALT) {
+		this.SALT = SALT;
 	}
 
 	// 获取 用户名 的属性值
-	public String getName() {
-		return name;
+	public String getNAME() {
+		return NAME;
 	}
 
 	// 设置 用户名 的属性值
-	public void setName(String name) {
-		this.name = name;
+	public void setNAME(String NAME) {
+		this.NAME = NAME;
 	}
 
 	// 获取 性别 的属性值
-	public String getGender() {
-		return gender;
+	public String getGENDER() {
+		return GENDER;
 	}
 
 	// 设置 性别 的属性值
-	public void setGender(String gender) {
-		this.gender = gender;
+	public void setGENDER(String GENDER) {
+		this.GENDER = GENDER;
 	}
 
 	// 获取 肖像 的属性值
-	public byte[] getPortrait() {
-		return portrait;
+	public byte getPORTRAIT() {
+		return PORTRAIT;
 	}
 
 	// 设置 肖像 的属性值
-	public void setPortrait(byte[] portrait) {
-		this.portrait = portrait;
+	public void setPORTRAIT(byte PORTRAIT) {
+		this.PORTRAIT = PORTRAIT;
 	}
 
 	// 获取 身份证件类型 的属性值
-	public String getIdcardType() {
-		return idcardType;
+	public String getIDCARD_TYPE() {
+		return IDCARD_TYPE;
 	}
 
 	// 设置 身份证件类型 的属性值
-	public void setIdcardType(String idcardType) {
-		this.idcardType = idcardType;
+	public void setIDCARD_TYPE(String IDCARD_TYPE) {
+		this.IDCARD_TYPE = IDCARD_TYPE;
 	}
 
 	// 获取 证件号码 的属性值
-	public String getIdcardNo() {
-		return idcardNo;
+	public String getIDCARD_NO() {
+		return IDCARD_NO;
 	}
 
 	// 设置 证件号码 的属性值
-	public void setIdcardNo(String idcardNo) {
-		this.idcardNo = idcardNo;
+	public void setIDCARD_NO(String IDCARD_NO) {
+		this.IDCARD_NO = IDCARD_NO;
 	}
 
 	// 获取 email 的属性值
-	public String getEmail() {
-		return email;
+	public String getEMAIL() {
+		return EMAIL;
 	}
 
 	// 设置 email 的属性值
-	public void setEmail(String email) {
-		this.email = email;
+	public void setEMAIL(String EMAIL) {
+		this.EMAIL = EMAIL;
 	}
 
-	// 获取 state 的属性值
-	public String getState() {
-		return state;
+	// 获取 STATE 的属性值
+	public String getSTATE() {
+		return STATE;
 	}
 
-	// 设置 state 的属性值
-	public void setState(String state) {
-		this.state = state;
+	// 设置 STATE 的属性值
+	public void setSTATE(String STATE) {
+		this.STATE = STATE;
 	}
 
 	// 获取 电话号码 的属性值
-	public String getMobilephone() {
-		return mobilephone;
+	public String getMobilePhone() {
+		return mobilePhone;
 	}
 
 	// 设置 电话号码 的属性值
-	public void setMobilephone(String mobilephone) {
-		this.mobilephone = mobilephone;
+	public void setMobilePhone(String mobilePhone) {
+		this.mobilePhone = mobilePhone;
 	}
 
 	// 获取 创建人 的属性值
-	public String getCreater() {
-		return creater;
+	public String getCREATER() {
+		return CREATER;
 	}
 
 	// 设置 创建人 的属性值
-	public void setCreater(String creater) {
-		this.creater = creater;
+	public void setCREATER(String CREATER) {
+		this.CREATER = CREATER;
 	}
 
 	// 获取 创建时间 的属性值
-	public Timestamp getItemcreateat() {
-		return itemcreateat;
+	public Timestamp getItemCreateAt() {
+		return itemCreateAt;
 	}
 
 	// 设置 创建时间 的属性值
-	public void setItemcreateat(Timestamp itemcreateat) {
-		this.itemcreateat = itemcreateat;
+	public void setItemCreateAt(Timestamp itemCreateAt) {
+		this.itemCreateAt = itemCreateAt;
 	}
 
 	// 获取 修改人 的属性值
-	public String getUpdater() {
-		return updater;
+	public String getUPDATER() {
+		return UPDATER;
 	}
 
 	// 设置 修改人 的属性值
-	public void setUpdater(String updater) {
-		this.updater = updater;
+	public void setUPDATER(String UPDATER) {
+		this.UPDATER = UPDATER;
 	}
 
 	// 获取 修改时间 的属性值
-	public Timestamp getItemupdateat() {
-		return itemupdateat;
+	public Timestamp getItemUpdateAt() {
+		return itemUpdateAt;
 	}
 
 	// 设置 修改时间 的属性值
-	public void setItemupdateat(Timestamp itemupdateat) {
-		this.itemupdateat = itemupdateat;
+	public void setItemUpdateAt(Timestamp itemUpdateAt) {
+		this.itemUpdateAt = itemUpdateAt;
 	}
 
 	// 获取 地级机构id 的属性值
-	public String getCityid() {
-		return cityid;
+	public String getCITYID() {
+		return CITYID;
 	}
 
 	// 设置 地级机构id 的属性值
-	public void setCityid(String cityid) {
-		this.cityid = cityid;
+	public void setCITYID(String CITYID) {
+		this.CITYID = CITYID;
 	}
 
 	// 获取 类型（0：普通，1：管理员） 的属性值
-	public Integer getType() {
-		return type;
+	public Integer getTYPE() {
+		return TYPE;
 	}
 
 	// 设置 类型（0：普通，1：管理员） 的属性值
-	public void setType(Integer type) {
-		this.type = type;
+	public void setTYPE(Integer TYPE) {
+		this.TYPE = TYPE;
 	}
 
 	// 获取 出生日期 的属性值
-	public Date getBirth() {
-		return birth;
+	public Date getBIRTH() {
+		return BIRTH;
 	}
 
 	// 设置 出生日期 的属性值
-	public void setBirth(Date birth) {
-		this.birth = birth;
+	public void setBIRTH(Date BIRTH) {
+		this.BIRTH = BIRTH;
 	}
 
-	// 获取 wxOpenid 的属性值
-	public String getWxOpenid() {
-		return wxOpenid;
+	// 获取 WX_OPENID 的属性值
+	public String getWX_OPENID() {
+		return WX_OPENID;
 	}
 
-	// 设置 wxOpenid 的属性值
-	public void setWxOpenid(String wxOpenid) {
-		this.wxOpenid = wxOpenid;
+	// 设置 WX_OPENID 的属性值
+	public void setWX_OPENID(String WX_OPENID) {
+		this.WX_OPENID = WX_OPENID;
 	}
 
 	// 重写toString方法，使用该方法可以在控制台打印属性的数据
 	@Override
 	public String toString(){
 		return "User {" + 
-				", itemid='" + itemid + '\'' + 
-				", itemcode='" + itemcode + '\'' + 
-				", orgCode='" + orgCode + '\'' + 
-				", username='" + username + '\'' + 
-				", password='" + password + '\'' + 
-				", salt='" + salt + '\'' + 
-				", name='" + name + '\'' + 
-				", gender='" + gender + '\'' + 
-				", portrait='" + portrait + '\'' + 
-				", idcardType='" + idcardType + '\'' + 
-				", idcardNo='" + idcardNo + '\'' + 
-				", email='" + email + '\'' + 
-				", state='" + state + '\'' + 
-				", mobilephone='" + mobilephone + '\'' + 
-				", creater='" + creater + '\'' + 
-				", itemcreateat='" + itemcreateat + '\'' + 
-				", updater='" + updater + '\'' + 
-				", itemupdateat='" + itemupdateat + '\'' + 
-				", cityid='" + cityid + '\'' + 
-				", type='" + type + '\'' + 
-				", birth='" + birth + '\'' + 
-				", wxOpenid='" + wxOpenid + '\'' + 
+				", itemID='" + itemID + '\'' + 
+				", itemCode='" + itemCode + '\'' + 
+				", ORG_CODE='" + ORG_CODE + '\'' + 
+				", USERNAME='" + USERNAME + '\'' + 
+				", PASSWORD='" + PASSWORD + '\'' + 
+				", SALT='" + SALT + '\'' + 
+				", NAME='" + NAME + '\'' + 
+				", GENDER='" + GENDER + '\'' + 
+				", PORTRAIT='" + PORTRAIT + '\'' + 
+				", IDCARD_TYPE='" + IDCARD_TYPE + '\'' + 
+				", IDCARD_NO='" + IDCARD_NO + '\'' + 
+				", EMAIL='" + EMAIL + '\'' + 
+				", STATE='" + STATE + '\'' + 
+				", mobilePhone='" + mobilePhone + '\'' + 
+				", CREATER='" + CREATER + '\'' + 
+				", itemCreateAt='" + itemCreateAt + '\'' + 
+				", UPDATER='" + UPDATER + '\'' + 
+				", itemUpdateAt='" + itemUpdateAt + '\'' + 
+				", CITYID='" + CITYID + '\'' + 
+				", TYPE='" + TYPE + '\'' + 
+				", BIRTH='" + BIRTH + '\'' + 
+				", WX_OPENID='" + WX_OPENID + '\'' + 
 				"}";
 	}
 }

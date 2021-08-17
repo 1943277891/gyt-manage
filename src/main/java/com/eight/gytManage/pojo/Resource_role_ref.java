@@ -9,19 +9,15 @@ import java.sql.Timestamp;
  * @Create 2021-08-16 11:10:17
  * @Version 1.0
  */
-public class Role {
+public class Resource_role_ref {
 	// 自增id
 	private Long itemID;
 	// 唯一标识UUID
 	private String itemCode;
-	// 角色名称
-	private String ROLE_NAME;
-	// 角色说明
-	private String ROLE_DESCRIPTION;
-	// 应用id
-	private String APP_CODE;
-	// 类型（0：普通，1：管理员）
-	private Integer ROLE_TYPE;
+	// RESOURCE_CODE ：
+	private String RESOURCE_CODE;
+	// ROLE_CODE ：
+	private String ROLE_CODE;
 	// CREATER ：
 	private String CREATER;
 	// itemCreateAt ：
@@ -32,17 +28,15 @@ public class Role {
 	private Timestamp itemUpdateAt;
 
 	// 无参构造器
-	public Role() {
+	public Resource_role_ref() {
 	}
 
 	// 有参构造器，进行属性值的初始化
-	public Role(Long itemID, String itemCode, String ROLE_NAME, String ROLE_DESCRIPTION, String APP_CODE, Integer ROLE_TYPE, String CREATER, Timestamp itemCreateAt, String UPDATER, Timestamp itemUpdateAt) {
+	public Resource_role_ref(Long itemID, String itemCode, String RESOURCE_CODE, String ROLE_CODE, String CREATER, Timestamp itemCreateAt, String UPDATER, Timestamp itemUpdateAt) {
 		this.itemID = itemID;
 		this.itemCode = itemCode;
-		this.ROLE_NAME = ROLE_NAME;
-		this.ROLE_DESCRIPTION = ROLE_DESCRIPTION;
-		this.APP_CODE = APP_CODE;
-		this.ROLE_TYPE = ROLE_TYPE;
+		this.RESOURCE_CODE = RESOURCE_CODE;
+		this.ROLE_CODE = ROLE_CODE;
 		this.CREATER = CREATER;
 		this.itemCreateAt = itemCreateAt;
 		this.UPDATER = UPDATER;
@@ -69,44 +63,24 @@ public class Role {
 		this.itemCode = itemCode;
 	}
 
-	// 获取 角色名称 的属性值
-	public String getROLE_NAME() {
-		return ROLE_NAME;
+	// 获取 RESOURCE_CODE 的属性值
+	public String getRESOURCE_CODE() {
+		return RESOURCE_CODE;
 	}
 
-	// 设置 角色名称 的属性值
-	public void setROLE_NAME(String ROLE_NAME) {
-		this.ROLE_NAME = ROLE_NAME;
+	// 设置 RESOURCE_CODE 的属性值
+	public void setRESOURCE_CODE(String RESOURCE_CODE) {
+		this.RESOURCE_CODE = RESOURCE_CODE;
 	}
 
-	// 获取 角色说明 的属性值
-	public String getROLE_DESCRIPTION() {
-		return ROLE_DESCRIPTION;
+	// 获取 ROLE_CODE 的属性值
+	public String getROLE_CODE() {
+		return ROLE_CODE;
 	}
 
-	// 设置 角色说明 的属性值
-	public void setROLE_DESCRIPTION(String ROLE_DESCRIPTION) {
-		this.ROLE_DESCRIPTION = ROLE_DESCRIPTION;
-	}
-
-	// 获取 应用id 的属性值
-	public String getAPP_CODE() {
-		return APP_CODE;
-	}
-
-	// 设置 应用id 的属性值
-	public void setAPP_CODE(String APP_CODE) {
-		this.APP_CODE = APP_CODE;
-	}
-
-	// 获取 类型（0：普通，1：管理员） 的属性值
-	public Integer getROLE_TYPE() {
-		return ROLE_TYPE;
-	}
-
-	// 设置 类型（0：普通，1：管理员） 的属性值
-	public void setROLE_TYPE(Integer ROLE_TYPE) {
-		this.ROLE_TYPE = ROLE_TYPE;
+	// 设置 ROLE_CODE 的属性值
+	public void setROLE_CODE(String ROLE_CODE) {
+		this.ROLE_CODE = ROLE_CODE;
 	}
 
 	// 获取 CREATER 的属性值
@@ -152,13 +126,11 @@ public class Role {
 	// 重写toString方法，使用该方法可以在控制台打印属性的数据
 	@Override
 	public String toString(){
-		return "Role {" + 
+		return "Resource_role_ref {" + 
 				", itemID='" + itemID + '\'' + 
 				", itemCode='" + itemCode + '\'' + 
-				", ROLE_NAME='" + ROLE_NAME + '\'' + 
-				", ROLE_DESCRIPTION='" + ROLE_DESCRIPTION + '\'' + 
-				", APP_CODE='" + APP_CODE + '\'' + 
-				", ROLE_TYPE='" + ROLE_TYPE + '\'' + 
+				", RESOURCE_CODE='" + RESOURCE_CODE + '\'' + 
+				", ROLE_CODE='" + ROLE_CODE + '\'' + 
 				", CREATER='" + CREATER + '\'' + 
 				", itemCreateAt='" + itemCreateAt + '\'' + 
 				", UPDATER='" + UPDATER + '\'' + 

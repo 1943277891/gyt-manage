@@ -6,122 +6,122 @@ import java.sql.Timestamp;
 
 /**
  * @Author Kele-Bing
- * @Create 2021-08-13 12:33:31
+ * @Create 2021-08-16 11:10:17
  * @Version 1.0
  */
 public class Organization {
-	// itemid ：
-	private Long itemid;
+	// itemID ：
+	private Long itemID;
 	// 唯一标识UUID
-	private String itemcode;
+	private String itemCode;
 	// 机构名称
-	private String orgName;
+	private String ORG_NAME;
 	// 机构编码
-	private String orgCode;
+	private String ORG_CODE;
 	// 描述
-	private String orgDescription;
+	private String ORG_DESCRIPTION;
 	// 标识符(用来标识机构类型)
-	private String orgIdentify;
+	private String ORG_IDENTIFY;
 	// 备用字段
 	private String backup1;
 	// 备用字段
 	private String backup2;
 	// 左值
-	private Integer left;
+	private Integer LEFT;
 	// 右值
-	private Integer right;
+	private Integer RIGHT;
 	// 层级
-	private Integer level;
+	private Integer LEVEL;
 	// 创建人
-	private String creater;
+	private String CREATER;
 	// 创建时间
-	private Timestamp itemcreateat;
+	private Timestamp itemCreateAt;
 	// 修改人
-	private String updater;
+	private String UPDATER;
 	// 修改时间
-	private Timestamp itemupdateat;
+	private Timestamp itemUpdateAt;
 
 	// 无参构造器
 	public Organization() {
 	}
 
 	// 有参构造器，进行属性值的初始化
-	public Organization(Long itemid, String itemcode, String orgName, String orgCode, String orgDescription, String orgIdentify, String backup1, String backup2, Integer left, Integer right, Integer level, String creater, Timestamp itemcreateat, String updater, Timestamp itemupdateat) {
-		this.itemid = itemid;
-		this.itemcode = itemcode;
-		this.orgName = orgName;
-		this.orgCode = orgCode;
-		this.orgDescription = orgDescription;
-		this.orgIdentify = orgIdentify;
+	public Organization(Long itemID, String itemCode, String ORG_NAME, String ORG_CODE, String ORG_DESCRIPTION, String ORG_IDENTIFY, String backup1, String backup2, Integer LEFT, Integer RIGHT, Integer LEVEL, String CREATER, Timestamp itemCreateAt, String UPDATER, Timestamp itemUpdateAt) {
+		this.itemID = itemID;
+		this.itemCode = itemCode;
+		this.ORG_NAME = ORG_NAME;
+		this.ORG_CODE = ORG_CODE;
+		this.ORG_DESCRIPTION = ORG_DESCRIPTION;
+		this.ORG_IDENTIFY = ORG_IDENTIFY;
 		this.backup1 = backup1;
 		this.backup2 = backup2;
-		this.left = left;
-		this.right = right;
-		this.level = level;
-		this.creater = creater;
-		this.itemcreateat = itemcreateat;
-		this.updater = updater;
-		this.itemupdateat = itemupdateat;
+		this.LEFT = LEFT;
+		this.RIGHT = RIGHT;
+		this.LEVEL = LEVEL;
+		this.CREATER = CREATER;
+		this.itemCreateAt = itemCreateAt;
+		this.UPDATER = UPDATER;
+		this.itemUpdateAt = itemUpdateAt;
 	}
 
-	// 获取 itemid 的属性值
-	public Long getItemid() {
-		return itemid;
+	// 获取 itemID 的属性值
+	public Long getItemID() {
+		return itemID;
 	}
 
-	// 设置 itemid 的属性值
-	public void setItemid(Long itemid) {
-		this.itemid = itemid;
+	// 设置 itemID 的属性值
+	public void setItemID(Long itemID) {
+		this.itemID = itemID;
 	}
 
 	// 获取 唯一标识UUID 的属性值
-	public String getItemcode() {
-		return itemcode;
+	public String getItemCode() {
+		return itemCode;
 	}
 
 	// 设置 唯一标识UUID 的属性值
-	public void setItemcode(String itemcode) {
-		this.itemcode = itemcode;
+	public void setItemCode(String itemCode) {
+		this.itemCode = itemCode;
 	}
 
 	// 获取 机构名称 的属性值
-	public String getOrgName() {
-		return orgName;
+	public String getORG_NAME() {
+		return ORG_NAME;
 	}
 
 	// 设置 机构名称 的属性值
-	public void setOrgName(String orgName) {
-		this.orgName = orgName;
+	public void setORG_NAME(String ORG_NAME) {
+		this.ORG_NAME = ORG_NAME;
 	}
 
 	// 获取 机构编码 的属性值
-	public String getOrgCode() {
-		return orgCode;
+	public String getORG_CODE() {
+		return ORG_CODE;
 	}
 
 	// 设置 机构编码 的属性值
-	public void setOrgCode(String orgCode) {
-		this.orgCode = orgCode;
+	public void setORG_CODE(String ORG_CODE) {
+		this.ORG_CODE = ORG_CODE;
 	}
 
 	// 获取 描述 的属性值
-	public String getOrgDescription() {
-		return orgDescription;
+	public String getORG_DESCRIPTION() {
+		return ORG_DESCRIPTION;
 	}
 
 	// 设置 描述 的属性值
-	public void setOrgDescription(String orgDescription) {
-		this.orgDescription = orgDescription;
+	public void setORG_DESCRIPTION(String ORG_DESCRIPTION) {
+		this.ORG_DESCRIPTION = ORG_DESCRIPTION;
 	}
 
 	// 获取 标识符(用来标识机构类型) 的属性值
-	public String getOrgIdentify() {
-		return orgIdentify;
+	public String getORG_IDENTIFY() {
+		return ORG_IDENTIFY;
 	}
 
 	// 设置 标识符(用来标识机构类型) 的属性值
-	public void setOrgIdentify(String orgIdentify) {
-		this.orgIdentify = orgIdentify;
+	public void setORG_IDENTIFY(String ORG_IDENTIFY) {
+		this.ORG_IDENTIFY = ORG_IDENTIFY;
 	}
 
 	// 获取 备用字段 的属性值
@@ -145,94 +145,94 @@ public class Organization {
 	}
 
 	// 获取 左值 的属性值
-	public Integer getLeft() {
-		return left;
+	public Integer getLEFT() {
+		return LEFT;
 	}
 
 	// 设置 左值 的属性值
-	public void setLeft(Integer left) {
-		this.left = left;
+	public void setLEFT(Integer LEFT) {
+		this.LEFT = LEFT;
 	}
 
 	// 获取 右值 的属性值
-	public Integer getRight() {
-		return right;
+	public Integer getRIGHT() {
+		return RIGHT;
 	}
 
 	// 设置 右值 的属性值
-	public void setRight(Integer right) {
-		this.right = right;
+	public void setRIGHT(Integer RIGHT) {
+		this.RIGHT = RIGHT;
 	}
 
 	// 获取 层级 的属性值
-	public Integer getLevel() {
-		return level;
+	public Integer getLEVEL() {
+		return LEVEL;
 	}
 
 	// 设置 层级 的属性值
-	public void setLevel(Integer level) {
-		this.level = level;
+	public void setLEVEL(Integer LEVEL) {
+		this.LEVEL = LEVEL;
 	}
 
 	// 获取 创建人 的属性值
-	public String getCreater() {
-		return creater;
+	public String getCREATER() {
+		return CREATER;
 	}
 
 	// 设置 创建人 的属性值
-	public void setCreater(String creater) {
-		this.creater = creater;
+	public void setCREATER(String CREATER) {
+		this.CREATER = CREATER;
 	}
 
 	// 获取 创建时间 的属性值
-	public Timestamp getItemcreateat() {
-		return itemcreateat;
+	public Timestamp getItemCreateAt() {
+		return itemCreateAt;
 	}
 
 	// 设置 创建时间 的属性值
-	public void setItemcreateat(Timestamp itemcreateat) {
-		this.itemcreateat = itemcreateat;
+	public void setItemCreateAt(Timestamp itemCreateAt) {
+		this.itemCreateAt = itemCreateAt;
 	}
 
 	// 获取 修改人 的属性值
-	public String getUpdater() {
-		return updater;
+	public String getUPDATER() {
+		return UPDATER;
 	}
 
 	// 设置 修改人 的属性值
-	public void setUpdater(String updater) {
-		this.updater = updater;
+	public void setUPDATER(String UPDATER) {
+		this.UPDATER = UPDATER;
 	}
 
 	// 获取 修改时间 的属性值
-	public Timestamp getItemupdateat() {
-		return itemupdateat;
+	public Timestamp getItemUpdateAt() {
+		return itemUpdateAt;
 	}
 
 	// 设置 修改时间 的属性值
-	public void setItemupdateat(Timestamp itemupdateat) {
-		this.itemupdateat = itemupdateat;
+	public void setItemUpdateAt(Timestamp itemUpdateAt) {
+		this.itemUpdateAt = itemUpdateAt;
 	}
 
 	// 重写toString方法，使用该方法可以在控制台打印属性的数据
 	@Override
 	public String toString(){
 		return "Organization {" + 
-				", itemid='" + itemid + '\'' + 
-				", itemcode='" + itemcode + '\'' + 
-				", orgName='" + orgName + '\'' + 
-				", orgCode='" + orgCode + '\'' + 
-				", orgDescription='" + orgDescription + '\'' + 
-				", orgIdentify='" + orgIdentify + '\'' + 
+				", itemID='" + itemID + '\'' + 
+				", itemCode='" + itemCode + '\'' + 
+				", ORG_NAME='" + ORG_NAME + '\'' + 
+				", ORG_CODE='" + ORG_CODE + '\'' + 
+				", ORG_DESCRIPTION='" + ORG_DESCRIPTION + '\'' + 
+				", ORG_IDENTIFY='" + ORG_IDENTIFY + '\'' + 
 				", backup1='" + backup1 + '\'' + 
 				", backup2='" + backup2 + '\'' + 
-				", left='" + left + '\'' + 
-				", right='" + right + '\'' + 
-				", level='" + level + '\'' + 
-				", creater='" + creater + '\'' + 
-				", itemcreateat='" + itemcreateat + '\'' + 
-				", updater='" + updater + '\'' + 
-				", itemupdateat='" + itemupdateat + '\'' + 
+				", LEFT='" + LEFT + '\'' + 
+				", RIGHT='" + RIGHT + '\'' + 
+				", LEVEL='" + LEVEL + '\'' + 
+				", CREATER='" + CREATER + '\'' + 
+				", itemCreateAt='" + itemCreateAt + '\'' + 
+				", UPDATER='" + UPDATER + '\'' + 
+				", itemUpdateAt='" + itemUpdateAt + '\'' + 
 				"}";
 	}
 }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.eight.gytManage.mapper.ChildHealthMapper">
+
+    <select id="LookContentById" resultMap="Look">
+        select * from Tb_natmeha_project p where p.itemID=#{itemID}
+    </select>
+
+    <resultMap id="Look" type="com.eight.gytManage.pojo.Tb_natmeha_project">
+            <id property="itemCode" column="itemCode"></id>
+            <result property="NAME" column="NAME"></result>
+    </resultMap>
+
+</mapper>

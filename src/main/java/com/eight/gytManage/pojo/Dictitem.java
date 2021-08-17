@@ -6,163 +6,163 @@ import java.sql.Timestamp;
 
 /**
  * @Author Kele-Bing
- * @Create 2021-08-13 12:33:31
+ * @Create 2021-08-16 11:10:17
  * @Version 1.0
  */
 public class Dictitem {
 	// 自增id
-	private Long itemid;
+	private Long itemID;
 	// 唯一标识UUID
-	private String itemcode;
+	private String itemCode;
 	// 关联dict表中的itemCode字段
-	private String dictCode;
+	private String DICT_CODE;
 	// 字典项编码
-	private String ditemCode;
+	private String DITEM_CODE;
 	// 字典项的值
-	private String ditemValue;
+	private String DITEM_VALUE;
 	// 父级CODE，关联本表的itemCode
-	private String ditemPcode;
+	private String DITEM_PCODE;
 	// 创建人
-	private String creater;
+	private String CREATER;
 	// 创建时间
-	private Timestamp itemcreateat;
+	private Timestamp itemCreateAt;
 	// 修改人
-	private String updater;
+	private String UPDATER;
 	// 修改时间
-	private Timestamp itemupdateat;
+	private Timestamp itemUpdateAt;
 
 	// 无参构造器
 	public Dictitem() {
 	}
 
 	// 有参构造器，进行属性值的初始化
-	public Dictitem(Long itemid, String itemcode, String dictCode, String ditemCode, String ditemValue, String ditemPcode, String creater, Timestamp itemcreateat, String updater, Timestamp itemupdateat) {
-		this.itemid = itemid;
-		this.itemcode = itemcode;
-		this.dictCode = dictCode;
-		this.ditemCode = ditemCode;
-		this.ditemValue = ditemValue;
-		this.ditemPcode = ditemPcode;
-		this.creater = creater;
-		this.itemcreateat = itemcreateat;
-		this.updater = updater;
-		this.itemupdateat = itemupdateat;
+	public Dictitem(Long itemID, String itemCode, String DICT_CODE, String DITEM_CODE, String DITEM_VALUE, String DITEM_PCODE, String CREATER, Timestamp itemCreateAt, String UPDATER, Timestamp itemUpdateAt) {
+		this.itemID = itemID;
+		this.itemCode = itemCode;
+		this.DICT_CODE = DICT_CODE;
+		this.DITEM_CODE = DITEM_CODE;
+		this.DITEM_VALUE = DITEM_VALUE;
+		this.DITEM_PCODE = DITEM_PCODE;
+		this.CREATER = CREATER;
+		this.itemCreateAt = itemCreateAt;
+		this.UPDATER = UPDATER;
+		this.itemUpdateAt = itemUpdateAt;
 	}
 
 	// 获取 自增id 的属性值
-	public Long getItemid() {
-		return itemid;
+	public Long getItemID() {
+		return itemID;
 	}
 
 	// 设置 自增id 的属性值
-	public void setItemid(Long itemid) {
-		this.itemid = itemid;
+	public void setItemID(Long itemID) {
+		this.itemID = itemID;
 	}
 
 	// 获取 唯一标识UUID 的属性值
-	public String getItemcode() {
-		return itemcode;
+	public String getItemCode() {
+		return itemCode;
 	}
 
 	// 设置 唯一标识UUID 的属性值
-	public void setItemcode(String itemcode) {
-		this.itemcode = itemcode;
+	public void setItemCode(String itemCode) {
+		this.itemCode = itemCode;
 	}
 
 	// 获取 关联dict表中的itemCode字段 的属性值
-	public String getDictCode() {
-		return dictCode;
+	public String getDICT_CODE() {
+		return DICT_CODE;
 	}
 
 	// 设置 关联dict表中的itemCode字段 的属性值
-	public void setDictCode(String dictCode) {
-		this.dictCode = dictCode;
+	public void setDICT_CODE(String DICT_CODE) {
+		this.DICT_CODE = DICT_CODE;
 	}
 
 	// 获取 字典项编码 的属性值
-	public String getDitemCode() {
-		return ditemCode;
+	public String getDITEM_CODE() {
+		return DITEM_CODE;
 	}
 
 	// 设置 字典项编码 的属性值
-	public void setDitemCode(String ditemCode) {
-		this.ditemCode = ditemCode;
+	public void setDITEM_CODE(String DITEM_CODE) {
+		this.DITEM_CODE = DITEM_CODE;
 	}
 
 	// 获取 字典项的值 的属性值
-	public String getDitemValue() {
-		return ditemValue;
+	public String getDITEM_VALUE() {
+		return DITEM_VALUE;
 	}
 
 	// 设置 字典项的值 的属性值
-	public void setDitemValue(String ditemValue) {
-		this.ditemValue = ditemValue;
+	public void setDITEM_VALUE(String DITEM_VALUE) {
+		this.DITEM_VALUE = DITEM_VALUE;
 	}
 
 	// 获取 父级CODE，关联本表的itemCode 的属性值
-	public String getDitemPcode() {
-		return ditemPcode;
+	public String getDITEM_PCODE() {
+		return DITEM_PCODE;
 	}
 
 	// 设置 父级CODE，关联本表的itemCode 的属性值
-	public void setDitemPcode(String ditemPcode) {
-		this.ditemPcode = ditemPcode;
+	public void setDITEM_PCODE(String DITEM_PCODE) {
+		this.DITEM_PCODE = DITEM_PCODE;
 	}
 
 	// 获取 创建人 的属性值
-	public String getCreater() {
-		return creater;
+	public String getCREATER() {
+		return CREATER;
 	}
 
 	// 设置 创建人 的属性值
-	public void setCreater(String creater) {
-		this.creater = creater;
+	public void setCREATER(String CREATER) {
+		this.CREATER = CREATER;
 	}
 
 	// 获取 创建时间 的属性值
-	public Timestamp getItemcreateat() {
-		return itemcreateat;
+	public Timestamp getItemCreateAt() {
+		return itemCreateAt;
 	}
 
 	// 设置 创建时间 的属性值
-	public void setItemcreateat(Timestamp itemcreateat) {
-		this.itemcreateat = itemcreateat;
+	public void setItemCreateAt(Timestamp itemCreateAt) {
+		this.itemCreateAt = itemCreateAt;
 	}
 
 	// 获取 修改人 的属性值
-	public String getUpdater() {
-		return updater;
+	public String getUPDATER() {
+		return UPDATER;
 	}
 
 	// 设置 修改人 的属性值
-	public void setUpdater(String updater) {
-		this.updater = updater;
+	public void setUPDATER(String UPDATER) {
+		this.UPDATER = UPDATER;
 	}
 
 	// 获取 修改时间 的属性值
-	public Timestamp getItemupdateat() {
-		return itemupdateat;
+	public Timestamp getItemUpdateAt() {
+		return itemUpdateAt;
 	}
 
 	// 设置 修改时间 的属性值
-	public void setItemupdateat(Timestamp itemupdateat) {
-		this.itemupdateat = itemupdateat;
+	public void setItemUpdateAt(Timestamp itemUpdateAt) {
+		this.itemUpdateAt = itemUpdateAt;
 	}
 
 	// 重写toString方法，使用该方法可以在控制台打印属性的数据
 	@Override
 	public String toString(){
 		return "Dictitem {" + 
-				", itemid='" + itemid + '\'' + 
-				", itemcode='" + itemcode + '\'' + 
-				", dictCode='" + dictCode + '\'' + 
-				", ditemCode='" + ditemCode + '\'' + 
-				", ditemValue='" + ditemValue + '\'' + 
-				", ditemPcode='" + ditemPcode + '\'' + 
-				", creater='" + creater + '\'' + 
-				", itemcreateat='" + itemcreateat + '\'' + 
-				", updater='" + updater + '\'' + 
-				", itemupdateat='" + itemupdateat + '\'' + 
+				", itemID='" + itemID + '\'' + 
+				", itemCode='" + itemCode + '\'' + 
+				", DICT_CODE='" + DICT_CODE + '\'' + 
+				", DITEM_CODE='" + DITEM_CODE + '\'' + 
+				", DITEM_VALUE='" + DITEM_VALUE + '\'' + 
+				", DITEM_PCODE='" + DITEM_PCODE + '\'' + 
+				", CREATER='" + CREATER + '\'' + 
+				", itemCreateAt='" + itemCreateAt + '\'' + 
+				", UPDATER='" + UPDATER + '\'' + 
+				", itemUpdateAt='" + itemUpdateAt + '\'' + 
 				"}";
 	}
 }

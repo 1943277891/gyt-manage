@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>儿童健康</title>
+    <link rel="stylesheet" href="http://localhost:8080/project/css/ChildHealth.css">
+</head>
+<div class="wapper">
+    <body>
+    <head>
+        <dev class="header">
+            <input class="search" type="text" placeholder="请输入">
+            <button class="sousuo">搜索</button>
+            <p class="hide"><a style="text-decoration: none" href="#">收起</a></p>
+        </dev>
+
+        <dev class="status">
+            <p class="status-xuan">其他选项: 展示状态:</p>
+            <select class="choose" name="choose" id="choose">
+                <option>展示中</option>
+                <option>已下架</option>
+            </select>
+            <button class="add"><a th:href="@{aaa}">新增儿童健康</a></button>
+        </dev>
+
+        <ul class="headline">
+            <li>文章标题</li>
+            <li>来源</li>
+            <li>作者</li>
+            <li>发布时间</li>
+            <li>操作</li>
+        </ul>
+    </head>
+
+    <div th:each="childlist : ${ All }">
+    <ul class="content">
+        <li th:text="${childlist.DEPT_CODE}"></li>
+        <li th:text="${childlist.DOCTOR_TITLE}"></li>
+        <li th:text="${childlist.DOCTOR_NAME}"></li>
+        <li th:text="${childlist.itemCreateAt}"></li>
+        <li>
+            <button><a th:href="@{look(itemID=${childlist.itemID})}">查看</a></button>
+            <button><a th:href="@{ccc(itemID=${childlist.itemID})}">修改</a></button>
+            <button><a th:href="@{delete(itemID=${childlist.itemID})}">删除</a></button>
+        </li>
+    </ul>
+    </div>
+    </body>
+    <footer>
+        <div class="buttom">
+            <ul class="choosepage">
+                <li><button><</button></li>
+                <li><button>1</button></li>
+                <li><button>2</button></li>
+                <li><button>3</button></li>
+                <li><button>4</button></li>
+                <li><button>5</button></li>
+                <li><button>6</button></li>
+                <li><button>7</button></li>
+                <li><button>8</button></li>
+                <li><button>9</button></li>
+                <li><button>></button></li>
+            </ul>
+            <p class="jumppage">跳转<input class="import" type="text">页</p>
+        </div>
+    </footer>
+    </dev>
+</div>
+
+<script type="text/javascript" data-main="/main/main" src="/plugins/jquery@3.5.1/jquery.js"></script>
+</html>
