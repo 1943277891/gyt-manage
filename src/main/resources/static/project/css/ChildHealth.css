@@ -16,7 +16,7 @@
 .choose{
     top: 118px;
     position: absolute;
-    left: 400px;
+    left: 300px;
     width: 200px;
 }
 .add{
@@ -27,7 +27,7 @@
 .sousuo{
     position: absolute;
     height: 31px;
-    left: 400px;
+    left: 300px;
     top: 58px;
     background-color: red;
     color: white;

@@ -4,6 +4,7 @@ import com.eight.gytManage.mapper.ChildHealthMapper;
 import com.eight.gytManage.pojo.Tb_natmeha_doctor;
 import com.eight.gytManage.pojo.Tb_natmeha_project;
 import com.eight.gytManage.service.ChildHealthService;
+import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +20,13 @@ public class ChildHealthServiceImpl implements ChildHealthService {
     public List<Tb_natmeha_doctor> getAllList() {
         return childHealthMapper.getAllList();
     }
+    //分页查询
+    @Override
+    public List<Tb_natmeha_doctor> getAllByPage(Integer pageNum, Integer pageSize) {
+        PageHelper.startPage(pageNum,pageSize);
+        return childHealthMapper.getAllList();
+    }
+
     //查看出版书的内容
     @Override
     public Tb_natmeha_project LookContentById(String itemID) {

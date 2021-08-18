@@ -15,6 +15,9 @@ public interface ChildHealthMapper {
      //查询出所有有关儿童健康的信息
      List<Tb_natmeha_doctor> getAllList();
 
+     //分页查询
+     List<Tb_natmeha_doctor> getAllByPage(Integer pageNum,Integer pageSize);
+
      //查看文章的内容
      Tb_natmeha_project LookContentById(String itemID);
 
