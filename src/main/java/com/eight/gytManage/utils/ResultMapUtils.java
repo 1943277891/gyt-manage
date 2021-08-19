@@ -1,7 +1,8 @@
 package com.eight.gytManage.utils;
 
 
-import com.eight.gytManage.page.Page;
+import com.eight.gytManage.pojo.Page;
+import com.eight.gytManage.pojo.UserLoginLog;
 
 import java.util.HashMap;
 import java.util.List;
@@ -37,8 +38,9 @@ public class ResultMapUtils {
 
     /**
      * 分页查询结果
+     * @param page
      */
-    public static <T> HashMap<String,Object> pageResult(Page<T> page){
+    public static <T> HashMap<String,Object> pageResult(Page<UserLoginLog> page){
         HashMap<String,Object> resultMap = new HashMap<>();
         resultMap.put("code",EnMsgType.SUCCESS.getCode());
         resultMap.put("msg",EnMsgType.SUCCESS.getMsg());
